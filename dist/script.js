@@ -1,2 +1,2 @@
-"use strict";var title=document.querySelector("#title");function typeWriter(t){var e=t.innerText.split("");t.innerText="",e.forEach((function(e,r){setTimeout((function(){return t.innerHTML+=e}),75*r)}))}typeWriter(title);
+"use strict";var title=document.querySelector("#title"),btn=document.querySelector("#btn"),share=document.querySelector("#share");function typeWriter(e){var t=e.innerText.split("");e.innerText="",t.forEach((function(t,r){return setTimeout((function(){return e.innerHTML+=t}),75*r)}))}typeWriter(title),btn.addEventListener("click",(function(){share.classList.toggle("show"),btn.querySelector("i").classList.toggle("active")}));
 //# sourceMappingURL=script.js.map

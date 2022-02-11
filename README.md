@@ -1,5 +1,5 @@
 <h1 align="center">
-  ❤  <a href="#"> </a>
+  🤔  <a href="#">Article preview component</a>
 </h1>
 
 <h3 align="center"> 
@@ -12,12 +12,12 @@
     <img alt="made by Thiago Moreira" src="https://img.shields.io/badge/made%20by-othiagomoreira-%237319C1">
   </a>
 
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/othiagomoreira/social-proof-section?color=%2300FFFF">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/othiagomoreira/article-preview-component-section?color=%2300FFFF">
 
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/othiagomoreira/social-proof-section?style=plastic">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/othiagomoreira/article-preview-component-section?style=plastic">
 
-  <a href="https://github.com/othiagomoreira/README/commits/main">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/othiagomoreira/social-proof-section">
+  <a href="https://github.com/othiagomoreira/article-preview-component/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/othiagomoreira/article-preview-component-section">
   </a>
     
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
@@ -38,7 +38,9 @@
 
 ## 📃 About
 
--   olá
+-   This was certainly an incredible project to carry out, it provided me with several challenges, especially in terms of positioning elements.
+
+-   I took the liberty of adding a typewriter effect, done with javascript and keyframe(css), honestly, I thought it was really cool 😊
 
 ---
 
@@ -47,17 +49,25 @@
 ### 📱 Mobile
 
 <p align="center">
-  <img alt="" title="#" src="" width="200px">
+  <img alt="Screenshot mobile" title="#article-preview-component" src="assets/mobile.png" width="200px">
 
-  <img alt="" title="#" src="" width="200px">
+  <img alt="Screenshot mobile active" title="#article-preview-component" src="assets/mobile-active.png" width="200px">
 </p>
 
-### 💻 Web
+### 💻 Tablet
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="" title="#" src="" width="400px">
+  <img alt="Screenshot tablet" title="#article-preview-component" src="assets/tablet.png" width="400px">
 
-  <img alt="" title="#" src="" width="400px">
+  <img alt="Screenshot tablet active" title="#article-preview-component" src="assets/tablet-active.png" width="400px">
+</p>
+
+### 🖥 Desktop
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="Screenshot desktop" title="#" src="assets/desktop.png" width="400px">
+
+  <img alt="Screenshot tablet active" title="#" src="assets/desktop-active.png" width="400px">
 </p>
 
 ---
@@ -66,8 +76,12 @@
 
 The following tools were used in the construction of the project:
 
--   Icons:  **[Feather Icons](https://feathericons.com/)**
--   Fonts:  **[Ubuntu](https://fonts.google.com/specimen/Ubuntu)**,  **[Roboto](https://fonts.google.com/specimen/Roboto)**
+-   Javascript
+-   Sass/Scss
+-   HTML
+-   Boxicons:  **[Boxicons](https://boxicons.com/)**
+-   Font family:  **[Manrope](https://fonts.google.com/specimen/Manrope)**
+
 ---
 
 ## 😎 Author

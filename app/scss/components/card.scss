@@ -7,15 +7,32 @@
     overflow: hidden;
     box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
 
+    @include breakpoint(medium) {
+        display: flex;
+        max-width: rem(710);
+        overflow: unset;
+    }
+
     &__image {
         display: block;
         background: url(../images/drawers.jpg) no-repeat;
         background-size: cover;
         height: rem(200);
+
+        @include breakpoint(medium) {
+            flex: 1;
+            height: auto;
+            border-radius: rem(8) 0 0 rem(8);
+        }
     }
 
     &__content {
         background-color: white;
+
+        @include breakpoint(medium) {
+            flex: 1.5;
+            border-radius: 0 rem(8) rem(8) 0;
+        }
     }
 
     &__copy {
@@ -25,8 +42,12 @@
     &__title {
         color: var(--color-primary);
         font-size: rem(16);
-        letter-spacing: 0.3px;
+        letter-spacing: rem(0.3);
         margin-bottom: rem(22);
+
+        @include breakpoint(medium) {
+            font-size: rem(20);
+        }
 
         &::after {
             content: '|';
@@ -51,13 +72,21 @@
         color: var(--color-text);
         font-weight: 500;
         line-height: 1.5;
-        letter-spacing: 0.4px;
+        letter-spacing: rem(0.4);
+
+        @include breakpoint(medium) {
+            letter-spacing: normal;
+        }
     }
 
     &__footer {
-        @include flex(space-between);
-        padding: rem(10) rem(34);
         position: relative;
+        @include flex(space-between);
+        padding: rem(16) rem(32);
+
+        @include breakpoint(medium) {
+            padding: 0 rem(32) rem(32);
+        }
     }
 
     &__info-personal {
@@ -66,11 +95,11 @@
     }
 
     &__avatar {
-        width: rem(45);
+        width: rem(40);
         border-radius: 100%;
     }
 
-    &__name {
+    &__author {
         color: var(--color-primary);
         font-size: rem(13);
         line-height: 1.7;
@@ -99,22 +128,68 @@
                 background-color: var(--color-text);
                 color: var(--color-bg-body);
             }
+
+            &.active {
+                background-color: var(--color-text);
+                color: var(--color-bg-body);
+            }
         }
     }
 
     &__share {
+        background-color: var(--color-primary);
         @include flex(initial);
         gap: rem(16);
 
         position: absolute;
-        bottom: 0;
-        left: 0;
         top: 0;
+        bottom: 0;
+        right: 0;
         width: 100%;
-        background-color: var(--color-primary);
         padding: 0 rem(34);
+        visibility: hidden;
+        opacity: 0;
+        transition: all ease 0.7s;
 
-        // visibility: hidden;
+        @include breakpoint(medium) {
+            flex-direction: column;
+            gap: rem(8);
+            top: rem(-90);
+            right: rem(-25);
+            bottom: initial;
+
+            width: rem(170);
+            padding: rem(8) 0;
+            border-radius: rem(8);
+            box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+
+            &::before {
+                content: '';
+                background-color: var(--color-primary);
+                position: absolute;
+                bottom: rem(-8);
+                left: 50%;
+
+                width: rem(20);
+                height: rem(20);
+                transform: rotate(45deg);
+            }
+        }
+
+        @include breakpoint(large) {
+            flex-direction: row;
+            gap: rem(16);
+            top: rem(-80);
+            right: rem(-65);
+
+            width: rem(240);
+            padding: rem(12) rem(24);
+        }
+
+        &.show {
+            visibility: visible;
+            opacity: 1;
+        }
 
         & span {
             color: var(--color-icons);
@@ -127,12 +202,21 @@
         @include flex(initial);
         gap: rem(8);
 
+        @include breakpoint(medium) {
+            gap: rem(16);
+        }
+
         & a {
             display: inline-block;
 
             & i {
                 font-size: rem(26);
                 color: white;
+                transition: all ease 0.5s;
+
+                &:hover {
+                    color: var(--color-icons);
+                }
             }
         }
     }

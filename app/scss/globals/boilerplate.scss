@@ -18,4 +18,8 @@ body {
 
     @include flex(center);
     min-height: 100vh;
+
+    @include breakpoint-down(small) {
+        padding: rem(48) 0;
+    }
 }
