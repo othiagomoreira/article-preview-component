@@ -1,5 +1,5 @@
 {
-  "name": "gulp-sass-tricks",
+  "name": "article-preview-component",
   "version": "1.0.0",
   "description": "Minimal Gulp workflow to compile Sass",
   "keywords": [],
@@ -22,5 +22,19 @@
     "last 1 version",
     "IE 11",
     "> 1%"
-  ]
+  ],
+  "main": "gulpfile.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/othiagomoreira/article-preview-component.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/othiagomoreira/article-preview-component/issues"
+  },
+  "homepage": "https://github.com/othiagomoreira/article-preview-component#readme"
 }

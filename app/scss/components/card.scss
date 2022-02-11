@@ -1,0 +1,92 @@
+@use '../util' as *;
+
+.card {
+    width: 90vw;
+    max-width: rem(337);
+    border-radius: rem(8);
+    overflow: hidden;
+    box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+
+    @include breakpoint(medium) {
+        display: flex;
+    }
+
+    &__image {
+        display: block;
+        background: url(../images/drawers.jpg) no-repeat;
+        background-size: cover;
+        height: rem(200);
+    }
+
+    &__content {
+        background-color: white;
+    }
+
+    &__copy {
+        padding: rem(32);
+    }
+
+    &__title {
+        color: var(--color-primary);
+        font-size: rem(16);
+        letter-spacing: 0.3px;
+        margin-bottom: rem(22);
+    }
+
+    &__description {
+        color: var(--color-text);
+        font-weight: 500;
+        line-height: 1.7;
+        letter-spacing: 0.4px;
+    }
+
+    &__footer {
+        @include flex(space-between);
+        padding: 0 rem(34) rem(16);
+    }
+
+    &__info-personal {
+        @include flex(initial);
+        gap: rem(16);
+    }
+
+    &__avatar {
+        width: rem(45);
+        border-radius: 100%;
+    }
+
+    &__name {
+        color: var(--color-primary);
+        font-size: rem(13);
+        line-height: 1.7;
+    }
+
+    &__time {
+        font-weight: 500;
+        color: var(--color-icons);
+    }
+
+    &__btn {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        & i {
+            background-color: var(--color-bg-body);
+            color: var(--color-text);
+            font-size: rem(16);
+            padding: rem(10);
+            border-radius: 50%;
+            transition: all ease 0.5s;
+
+            &:hover {
+                background-color: var(--color-text);
+                color: var(--color-bg-body);
+            }
+        }
+    }
+
+    &__share {
+        display: none;
+    }
+}
