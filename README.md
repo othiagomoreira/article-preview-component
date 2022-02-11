@@ -12,12 +12,12 @@
     <img alt="made by Thiago Moreira" src="https://img.shields.io/badge/made%20by-othiagomoreira-%237319C1">
   </a>
 
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/othiagomoreira/article-preview-component-section?color=%2300FFFF">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/othiagomoreira/article-preview-component?color=%2300FFFF">
 
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/othiagomoreira/article-preview-component-section?style=plastic">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/othiagomoreira/article-preview-component?style=plastic">
 
   <a href="https://github.com/othiagomoreira/article-preview-component/commits/main">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/othiagomoreira/article-preview-component-section">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/othiagomoreira/article-preview-component">
   </a>
     
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
