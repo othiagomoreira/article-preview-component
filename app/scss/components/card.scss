@@ -3,13 +3,9 @@
 .card {
     width: 90vw;
     max-width: rem(337);
-    border-radius: rem(8);
+    border-radius: rem(12);
     overflow: hidden;
     box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
-
-    @include breakpoint(medium) {
-        display: flex;
-    }
 
     &__image {
         display: block;
@@ -23,7 +19,7 @@
     }
 
     &__copy {
-        padding: rem(32);
+        padding: rem(32) rem(32) rem(16);
     }
 
     &__title {
@@ -31,18 +27,37 @@
         font-size: rem(16);
         letter-spacing: 0.3px;
         margin-bottom: rem(22);
+
+        &::after {
+            content: '|';
+            color: var(--color-blink);
+            margin-left: rem(3);
+            opacity: 1;
+            animation: blink 0.8s infinite;
+
+            @keyframes blink {
+                0%,
+                100% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0;
+                }
+            }
+        }
     }
 
     &__description {
         color: var(--color-text);
         font-weight: 500;
-        line-height: 1.7;
+        line-height: 1.5;
         letter-spacing: 0.4px;
     }
 
     &__footer {
         @include flex(space-between);
-        padding: 0 rem(34) rem(16);
+        padding: rem(10) rem(34);
+        position: relative;
     }
 
     &__info-personal {
@@ -69,13 +84,14 @@
     &__btn {
         background: transparent;
         border: none;
+        z-index: 10;
         cursor: pointer;
 
         & i {
             background-color: var(--color-bg-body);
             color: var(--color-text);
-            font-size: rem(16);
-            padding: rem(10);
+            font-size: rem(18);
+            padding: rem(6);
             border-radius: 50%;
             transition: all ease 0.5s;
 
@@ -87,6 +103,37 @@
     }
 
     &__share {
-        display: none;
+        @include flex(initial);
+        gap: rem(16);
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: var(--color-primary);
+        padding: 0 rem(34);
+
+        // visibility: hidden;
+
+        & span {
+            color: var(--color-icons);
+            text-transform: uppercase;
+            letter-spacing: rem(5);
+        }
+    }
+
+    &__social-medias {
+        @include flex(initial);
+        gap: rem(8);
+
+        & a {
+            display: inline-block;
+
+            & i {
+                font-size: rem(26);
+                color: white;
+            }
+        }
     }
 }

@@ -1,2 +1,2 @@
-"use strict";console.log("HELLO");
+"use strict";var title=document.querySelector("#title");function typeWriter(t){var e=t.innerText.split("");t.innerText="",e.forEach((function(e,r){setTimeout((function(){return t.innerHTML+=e}),75*r)}))}typeWriter(title);
 //# sourceMappingURL=script.js.map
